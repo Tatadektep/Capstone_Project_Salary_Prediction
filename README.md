@@ -1,16 +1,15 @@
 # Capstone (Working Repo)
-by [*Kantaphon Vareekasem*](https://github.com/Tatadektep) [LinkedIn](https://www.linkedin.com/in/kantaphon-tata-vareekasem/)
+by [*Kantaphon Vareekasem*](https://github.com/Tatadektep) 
+[**LinkedIn**](https://www.linkedin.com/in/kantaphon-tata-vareekasem/)
 
 Hi All, 
 
 This is my working repo for capstone project. 
 
 Working Plans
-1. Baseline Model for 2020 Data US -> Add Stats Model -> NLP JD: CountVectorizer
-2. Compare with Thai Jobs and Opportunites -> Got some data -> Clean
-3. *Possible* Change compared to 2022 -> Independent t-test -> Any structural
-4. *Possible* Try SQL Google Diversity Report -> Explain the benefits from employer side.
-5. Streamlit
+1. Baseline Model for 2020 Data US -> Group by Job Title & Location -> NLP JD: CountVectorizer
+2. [**Check Out my Streamlit App :D**](https://tatadektep-working-capstone-app-37rd2s.streamlit.app/)
+3. Model with JD + categorical
 
 ### [Presentation Deck]()
 
