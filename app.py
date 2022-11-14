@@ -2,6 +2,7 @@ from operator import mod
 import pandas as pd
 import streamlit as st
 import pickle
+import sklearn
 
 # @st.cache
 def load_model():
