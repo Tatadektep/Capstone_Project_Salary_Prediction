@@ -150,7 +150,8 @@ def show_explore_page():
     st.plotly_chart(fig, use_container_width=True)
     st.write("Agriculture and Forestry is unreliable as there is only one posting in the dataset.")
     st.write("IT industry made the highest average minimal and maximal yearly salary.")
-
+    
+    st.write(""" ### Job Title Summary""")
     titles = ['Data Scientist' ,'Data Analyst' ,'Data Engineer']
     min_sal = []
     max_sal = []
@@ -158,7 +159,6 @@ def show_explore_page():
         min_sal.append(data_df[data_df['Job_title'] == title]['Min_Salary'].mean())
         max_sal.append(data_df[data_df['Job_title'] == title]['Max_Salary'].mean())
         
-
     fig = go.Figure()
     fig.add_trace(go.Bar(x = min_sal ,y = titles , marker_color = '#399ba3',
     orientation = 'h' , name = 'Min Salary'))
