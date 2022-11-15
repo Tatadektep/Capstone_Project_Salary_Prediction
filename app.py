@@ -102,5 +102,5 @@ if ok:
 
     to_predict = to_predict.fillna(0)
     salary = model.predict(to_predict)
-    st.write(f"The estimate minimum salary is ${salary[0]:.2f}")
+    st.title(f"The estimate minimum salary is ${salary[0]:.2f}")
 
