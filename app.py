@@ -248,7 +248,5 @@ def show_explore_page():
 
 # Change Page
 
-while page == "Predict":
-    show_predict_page()
-else:
-    show_explore_page()
+
+show_predict_page()
