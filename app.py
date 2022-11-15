@@ -157,6 +157,7 @@ def show_explore_page():
     for title in titles:
         min_sal.append(data_df[data_df['Job_title'] == title]['Min_Salary'].mean())
         max_sal.append(data_df[data_df['Job_title'] == title]['Max_Salary'].mean())
+        
 
     fig = go.Figure()
     fig.add_trace(go.Bar(x = min_sal ,y = titles , marker_color = '#399ba3',
