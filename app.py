@@ -14,7 +14,7 @@ def load_model():
 
 model = load_model()
 
-page = st.sidebar.selectbox("Salary Prediction or Explore the Dataset", ("Predict", "Explore"))
+page = st.sidebar.selectbox("Salary Prediction or Explore the Dataset", ("Predict", "Explore"), key = "unique")
 
 def show_predict_page():
     st.title("Salary Prediction of Data Position in the US")
@@ -241,7 +241,6 @@ def show_explore_page():
                     barmode = 'group',
                     yaxis={'categoryorder':'total ascending'})
     fig.show()
-
 
 
 if page == "Predict":
