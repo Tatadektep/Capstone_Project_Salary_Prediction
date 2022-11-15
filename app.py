@@ -19,7 +19,6 @@ model = load_model()
 #unique = random.sample(range(1, 99),1)
 page = st.sidebar.selectbox("Salary Prediction or Explore the Dataset", ("Predict", "Explore"), key = 0)
 
-@st.cache
 def show_predict_page():
     st.title("Salary Prediction of Data Position in the US")
 
@@ -204,7 +203,7 @@ def show_predict_page():
         salary = model.predict(to_predict)
         st.title(f"The estimate minimum salary is ${salary[0]:.2f}")
 
-@st.cache
+
 def show_explore_page():
     st.title("Explore the Baseline of the Dataset and Exploratory Data Analysis")
     
@@ -248,7 +247,4 @@ def show_explore_page():
 
 
 # Change Page
-if page == "Predict":
-    show_predict_page()
-else:
-    show_explore_page()
+
