@@ -19,11 +19,6 @@ model = load_model()
 unique = random.sample(range(1, 99),1)
 page = st.sidebar.selectbox("Salary Prediction or Explore the Dataset", ("Predict", "Explore"), key = unique)
 
-if page == "Predict":
-    show_predict_page()
-else:
-    show_explore_page()
-    
 def show_predict_page():
     st.title("Salary Prediction of Data Position in the US")
 
@@ -252,3 +247,8 @@ def show_explore_page():
     fig.show()
 
 
+# Change Page
+if page == "Predict":
+    show_predict_page()
+else:
+    show_explore_page()
