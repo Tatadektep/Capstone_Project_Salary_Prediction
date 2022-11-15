@@ -249,5 +249,6 @@ def show_explore_page():
 # Change Page
 if page == "Predict":
     show_predict_page()
+    pass
 else:
     show_explore_page()
