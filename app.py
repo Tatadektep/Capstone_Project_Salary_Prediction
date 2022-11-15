@@ -8,7 +8,7 @@ import plotly.graph_objs as go
 import random
 
 
-# @st.cache
+@st.cache
 def load_model():
   with open('models/author_ridge.pkl', 'rb') as f:
     the_model = pickle.load(f)
@@ -16,9 +16,10 @@ def load_model():
 
 model = load_model()
 
-unique = random.sample(range(1, 99),1)
-page = st.sidebar.selectbox("Salary Prediction or Explore the Dataset", ("Predict", "Explore"), key = unique)
+#unique = random.sample(range(1, 99),1)
+page = st.sidebar.selectbox("Salary Prediction or Explore the Dataset", ("Predict", "Explore"), key = 0)
 
+@st.cache
 def show_predict_page():
     st.title("Salary Prediction of Data Position in the US")
 
@@ -203,8 +204,7 @@ def show_predict_page():
         salary = model.predict(to_predict)
         st.title(f"The estimate minimum salary is ${salary[0]:.2f}")
 
-
-
+@st.cache
 def show_explore_page():
     st.title("Explore the Baseline of the Dataset and Exploratory Data Analysis")
     
