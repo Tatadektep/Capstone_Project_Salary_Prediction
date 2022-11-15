@@ -110,7 +110,6 @@ def show_predict_page():
         to_predict = to_predict.fillna(0)
         salary = model.predict(to_predict)
         st.title(f"The estimate minimum salary is ${salary[0]:.2f}")
-    st.title("Salary Prediction of Data Position in the US")
 
 
 def show_explore_page():
@@ -119,7 +118,6 @@ def show_explore_page():
     data_df = pd.read_csv("dataset/Combined_Data.csv")
 
     st.write(""" ### State Summary""")
-    st.write(data_df)
     states = data_df['State'].unique().tolist()
     fig = go.Figure()
     min_sal =  data_df.groupby('State')['Min_Salary']
@@ -133,7 +131,7 @@ def show_explore_page():
                         name = 'Max Salary' , marker_color = '#399ba3'))
     fig.update_layout(template = 'ggplot2', barmode = 'group',
                     xaxis={'categoryorder':'total ascending'})
-    fig.show()
+    st.write(fig.show())
 
     st.write(""" ### Industry Summary""")
     ind = data_df[~data_df['Industry'].isnull()]
@@ -149,7 +147,9 @@ def show_explore_page():
                     title = 'Minimal And Maximal Average Annual Salaries according to industries' ,
                     barmode = 'group',
                     yaxis={'categoryorder':'total ascending'})
-    fig.show()
+    st.write(fig.show())
+
+    st.write("Please check the notebook for the full analysis.")
 
 
 if page == "Predict":
