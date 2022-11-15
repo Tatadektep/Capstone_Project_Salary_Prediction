@@ -148,6 +148,26 @@ def show_explore_page():
                     barmode = 'group',
                     yaxis={'categoryorder':'total ascending'})
     st.plotly_chart(fig, use_container_width=True)
+    st.write("Agriculture and Forestry is unreliable as there is only one posting in the dataset.")
+    st.write("IT industry made the highest average minimal and maximal yearly salary.")
+
+    titles = ['Data Scientist' ,'Data Analyst' ,'Data Engineer']
+    min_sal = []
+    max_sal = []
+    for title in titles:
+        min_sal.append(data_df[data_df['Job_title'] == title]['Min_Salary'].mean())
+        max_sal.append(data_df[data_df['Job_title'] == title]['Max_Salary'].mean())
+
+    fig = go.Figure()
+    fig.add_trace(go.Bar(x = min_sal ,y = titles , marker_color = '#399ba3',
+    orientation = 'h' , name = 'Min Salary'))
+    fig.add_trace(go.Bar(x = max_sal ,y = titles , marker_color = '#bd3939',
+    orientation = 'h' , name = 'Max Salary'))
+    fig.update_layout(title = 'Annual Average Salaries for Data Roles (Job Titles)',
+    barmode = 'group' ,template = 'plotly_white',yaxis={'categoryorder':'total ascending'}
+                    )
+    st.plotly_chart(fig, use_container_width=True)
+    st.write("Data Scientist have the highest average salary followed by Data Engineer and Data Analyst.")
 
     st.write("Please check the notebook for the full analysis.")
 
