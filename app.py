@@ -131,7 +131,7 @@ def show_explore_page():
                         name = 'Max Salary' , marker_color = '#399ba3'))
     fig.update_layout(template = 'ggplot2', barmode = 'group',
                     xaxis={'categoryorder':'total ascending'})
-    st.write(fig.show())
+    st.plotly_chart(fig, use_container_width=True)
 
     st.write(""" ### Industry Summary""")
     ind = data_df[~data_df['Industry'].isnull()]
@@ -147,7 +147,7 @@ def show_explore_page():
                     title = 'Minimal And Maximal Average Annual Salaries according to industries' ,
                     barmode = 'group',
                     yaxis={'categoryorder':'total ascending'})
-    st.write(fig.show())
+    st.plotly_chart(fig, use_container_width=True)
 
     st.write("Please check the notebook for the full analysis.")
 
