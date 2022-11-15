@@ -8,7 +8,6 @@ import plotly.graph_objs as go
 import random
 
 
-@st.cache
 def load_model():
   with open('models/author_ridge.pkl', 'rb') as f:
     the_model = pickle.load(f)
@@ -246,7 +245,7 @@ def show_explore_page():
     fig.show()
 
 
-# Change Page
-
-
-show_predict_page()
+if page == "Predict":
+    show_predict_page()
+else:
+    show_explore_page()
