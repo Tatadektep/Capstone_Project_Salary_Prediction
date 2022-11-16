@@ -9,56 +9,73 @@ This is my working repo for capstone project.
 Working Plans
 1. Baseline Model for 2020 Data US -> Group by Job Title & Location -> NLP JD: CountVectorizer
 2. [**Check Out my Streamlit App :D**](https://tatadektep-working-capstone-app-37rd2s.streamlit.app/)
-3. Model with JD + categorical
 
 ### [Presentation Deck]()
 
 
 
 ## Executive summary:
-- What is your goal? The goal of this project is to provide accurate salary guidance to increase pay transparency for new job seekers.
-- Where did you get your data?
-- What are your metrics? The key metrics are RMSE (Root Mean Squared Error).
-- What were your findings?
+Salary prediction model are important tool used to help job seeker get more accurate salary depending on multiple factors. The goal of this project is to provide accurate salary guidance to increase pay transparency for new job seekers along with the best practices to improve necessary skills. A study from Glassdoor found that an average American's earning could be about $7,500 more per year. Furthermore, lower initial salary has compounding effects where it could affect subsequent salary offer. This could cost candidates over $600,000 over the course of the career.
+
+The dataset is collected from Glassdoor for 1790 unique job posting. The key metrics are R-Squared which is proportion of variance minimum salary is explained by the feature and RMSE (Root Mean Squared Error) which the differences between the prediction and actual values.
+
+- What were your findings? 
 - What risks/limitations/assumptions affect these findings? 
-The main assumption is that similar skilled candidates should be able to negotiate same salary range. However, there are many factors outside the scope of this project which have considerable impact on the salary range such as personality, negotiation skills and personal beliefs. 
+The main assumption is that similarly skilled candidates should be able to negotiate with a comparable salary range. However, there are many factors outside the scope of this project which have considerable impact on the salary range such as years of experience, education level, personality, negotiation skills and personal beliefs. 
 
 ### Introduction
-
+Pay is one of the most important factors in considering a new job. Yet, only a small percentage of companies has explicitly state the salary range. The information asymetric could lead unoptimised outcome for job seeker as business have significant advanatges for the candidates. 
 
 ### Problem Statement
-1. Pay is one of the most important factors in considering a new job. Yet, only a small percentage of companies has explicitly state the salary range. The assymetric information could lead unoptimised outcome for job seeker and business. Moreover, the lack of transparency can amount to unintentional discrimination and inequality issues due to bias.
-2. Evaluate your current salary and potential job offers compared to the job market.
-3. Understand the value of each skills and possible career paths based on current position.
+1. Salary range and salary data are rarely transparent for most companies. There are some public available salary for most large companies in the demanding industries such as technology industry. The lack of transparency can be major obstacles for inexperienced workers from students, graduates and career changers to switch into a different industries. Furthermore, this could unintentionally lead to discrimination and inequality issues due to systemic biases.
+2. Many qualified candidates are hired below their job level. It is difficult to objectively evaluate your current salary and potential job offers compared to the job market especially for niche industry and/or company without considerable dataset or industry experts.
+3. Understand the value of each skillset and to find possible career paths based on current position. Moreover, the job seeker can.
 
 ### Dataset
 [Glassdoor Job Postings : Data Science USA 2020](https://www.kaggle.com/datasets/atharvap329/glassdoor-data-science-job-data)
-The data is data science job from USA in the 2020.
-The dataset is composed of a train and test folder, each with data roles and non-data role. Within the dataset contains job postings scraped by using the keyword of 'Data Scientist' from glassdoor.com to analyzed the gathered data and predict accurate salary range. In the test data, there are X and X. In the train data, there are X and X normal.
-Most of the data gather from the following states: California, Washington, New York as major areas to find the related roles.
+
+The dataset is composed of a train and test folder, each with data roles and non-data roles. Within the dataset contains job postings scraped by using the keyword of 'Data Scientist' from glassdoor.com to analyzed the gathered data and predict accurate salary range. The dataset is collected from jobs in the USA in the 2020. After removing duplicated job posting and one without a salary range, the dataset contains a total of 1790 positions where 1137 positions relating to data positions and 653 positions that are unrelated to data positions. Most of the data gather from the following states: California, Washington, New York as major areas to find the data related roles.
+
+### Benefit to Job Seeker
+1. Company Fit
 
 ### Benefit to Business
 1. Candidates would be able to develop relevant skills to adequately fulfil the need of business especially for the labour shortage in the IT market sector.
 2. Business would be able to employed larger number of workers with diverse skillset and perspective especially from disadvantaged segment group of workers at the competitive price.
-3. 
+3. The company can significantly improve employee retention and compete with larger companies by providing The cost of losing an employee to the competition due to outdated compensation can be directly or indirectly cost as much as 60 percent of former employee's annual salary and up to 200 percent according to the study by the Society for Human Resources Management (SHRM) .
 
-### Business Recommendation
-Valuable Features 
+### Key Findings
+1. The main factors affecting the minimum salary are Location followed by Company and Job Title 
+
+### Recommendation
+1. Market research
+2. Networking  
     
 ### Summary   
+1. Salary prediction model performs better than the baseline model and publicly established salary range for some industries. However, the model error is quite significant at ~$24,750 or 30% due to the insufficient number of data and features explaining the salary. 
+2. There are considerable external factor outside of the model
 
 
-
-### Future Works on Thai Data
+### Future Works 
+- Extract More Data from different
+- Explore the variance of work relating to job titles and job description.
+- Explore total compensation with bonus and non-cash compensation instead of the minimum base salary
+- Verify Data with employee in each industry.
 
 Glassdoor Job Postings : Data Science Positions Thailand 2022 Using [Kevin Xuande: Glassdoor Scraper](https://github.com/kelvinxuande/glassdoor-scraper)
 
 ### References:
 [Adecco Reveals Salary Rates and High-Demand Jobs in 2021](https://adecco.co.th/en/news/detail/salary-guide-2021)
 
+[How to do Salary Research](https://www.youtube.com/watch?v=45c_2UE7ZKs)
+
+[How To Get the Salary You Want: Twelve Negotiation Tactics That Work](https://www.brodow.com/how-to-get-the-salary-you-want-twelve-negotiation-tactics-that-work)
+
 [JobsDB by SEEK Salary Report 2022](https://th.jobsdb.com/en-th/cms/employer/wp-content/themes/jobsdb/assets/pdf/TH-EN-SalaryReport-03FEB2022.pdf)
 
-[Salary Prediction in the IT Job Market withFew High-Dimensional Samples: A Spanish Case Study](https://www.researchgate.net/publication/327080220_Salary_Prediction_in_the_IT_Job_Market_with_Few_High-Dimensional_Samples_A_Spanish_Case_Study)
+[Salary Negotiation: Top Mistakes to AVOID | Indeed Career Tips](https://www.youtube.com/watch?v=bx9bTbN5wH0)
+
+[Salary Prediction in the IT Job Market with Few High-Dimensional Samples: A Spanish Case Study](https://www.researchgate.net/publication/327080220_Salary_Prediction_in_the_IT_Job_Market_with_Few_High-Dimensional_Samples_A_Spanish_Case_Study)
 
 [SALARY PREDICTION USING MACHINE LEARNING](http://ijasret.com/VolumeArticles/FullTextPDF/842_47._SALARY_PREDICTION_USING_MACHINE_LEARNING.pdf)
 
