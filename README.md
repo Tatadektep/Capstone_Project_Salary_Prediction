@@ -1,5 +1,5 @@
 # Capstone Project: Salary Prediction
-by [*Kantaphon Vareekasem*](https://github.com/Tatadektep) 
+by [*Kantaphon Vareekasem*](https://github.com/Tatadektep) | 
 [**LinkedIn**](https://www.linkedin.com/in/kantaphon-tata-vareekasem/)
 
 “Learn how to set goals. That's the key to everything. That includes designing your own success. You define what the goal is, it's not somebody else's goal, it's yours.” - Drew Carey
