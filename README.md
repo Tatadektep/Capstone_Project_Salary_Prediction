@@ -2,7 +2,7 @@
 by [*Kantaphon Vareekasem*](https://github.com/Tatadektep) | 
 [**LinkedIn**](https://www.linkedin.com/in/kantaphon-tata-vareekasem/)
 
-“Learn how to set goals. That's the key to everything. That includes designing your own success. You define what the goal is, it's not somebody else's goal, it's yours.” - Drew Carey
+“Learn how to set goals. That's the key to everything. That includes designing your own success. You define what the goal is, it's not somebody else's goal, it's yours.” - Drew Carey. 
 In this project, we aim to develop an application that can help job seekers to compare salaries on different companies, locations and more.
 
 ### [Presentation Deck](https://docs.google.com/presentation/d/1wuFNchdLq1EmiAhgZ1OxkKycmU4Ak3TQaQiDFMkywWs/edit?usp=sharing)
@@ -52,7 +52,7 @@ The dataset is composed of a train and test folder, each with data roles and non
 ### Recommendation
 1. Market research: Extensive market research for the specific company, industry, and location 
 It would be best to research the employer before applying for the job to ensure your goals and mission aligns with the target company, and to identify which companies are the best fit according to your area of interest, skills and, expertise.[Source](https://www.linkedin.com/pulse/why-company-research-important-tool-job-seekers-sahasha-namdeo/) 
-2. Networking: 1. Focus on Learning: Mindset shift to see networking as an opportunity for discovery and learning rather than a chore. The conversation might brings up new ideas and leads to new experiences and opportunities.[Source](https://hbr.org/2016/05/learn-to-love-networking)
+2. Networking: Focus on Learning: Mindset shift to see networking as an opportunity for discovery and learning rather than a chore. The conversation might brings up new ideas and leads to new experiences and opportunities.[Source](https://hbr.org/2016/05/learn-to-love-networking)
 3. Get a career coach:  Career coaches provide a range of services, from helping you figure out what you want to do to exploring opportunities for professional growth to supporting you through the ups and downs of looking for a new job.[Source](https://hbr.org/2022/02/do-you-need-a-career-coach)
 
 ### Future Works 
